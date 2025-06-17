@@ -1,1 +1,46 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<style>
+    body {
+        font-family: "Montserrat", sans-serif;
+    }
+    .score-section {
+        margin-top: 5rem;
+        padding: 0 2rem;
+    }
+    .score-card {
+        border: 2px solid #F28C28;
+        border-radius: 12px;
+        padding: 1rem;
+        background-color: #fdfdfd;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .score-card h5 {
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    .radial-group {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    .radial-progress-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .radial-progress {
+        --size: 100px;
+        --thickness: 10px;
+        --value: 75;
+        width: var(--size);
+        height: var(--size);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: con
 
