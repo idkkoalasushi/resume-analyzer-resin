@@ -1,1 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container py-5">
+    <h1 class="mb-4">Upload Your Resume</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" class="form-control mb-3">
+        <button type="submit" class="btn btn-success">Upload</button>
+    </form>
+</div>
+{% endblock %}
 
